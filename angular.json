@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "assignment01"
+  "defaultProject": "assignment01",
+  "cli": {
+    "analytics": false
+  }
 }

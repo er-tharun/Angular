@@ -1,0 +1,23 @@
+
+<h3>Products List</h3>
+    <table border=1>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+        </tr>
+        <tr *ngFor='let product of products'>
+            <td>{{product.ProductName}}</td>
+            <td>{{product.Quantity}}</td>
+        </tr>
+    </table>
+    <br/>
+    
+
+    <form #productForm='ngForm' (ngSubmit)="onSubmitForm(productForm)">
+        <label>Enter Product Name</label>
+        <input type="text" id="ProductName" name="ProductName" ngModel>
+        <label>Enter Quantity</label>
+        <input type="text" id="quantity" name="Quantity" ngModel>
+        <button type="submit">Add Product</button>
+    </form>
+    
